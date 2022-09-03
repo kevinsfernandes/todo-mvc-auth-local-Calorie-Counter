@@ -18,12 +18,13 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
+
     <section>
         <form action="/login" method="POST">
             <fieldset>
                 <legend>Log in</legend>
                 <label>Username</label>
-                <input type="email" name="email" placeholder="Username">
+                <input type="text" name="username" placeholder="username">
 
                 <label>Password</label>
                 <input type="password" name="password" placeholder="Password">
@@ -33,5 +34,6 @@
             </fieldset>
         </form>
     </section>
+
 </body>
 </html>

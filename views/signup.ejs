@@ -13,6 +13,7 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
+    
     <section>
         <form action="/signup" method="POST">
             <fieldset>
@@ -21,22 +22,23 @@
                 <label for="userName">Username</label>
                 <input type="text" name="userName" placeholder="Username">
 
-                <label for="email">Email Address</label>
-                <input type="email" name="email" placeholder="Email">
-
                 <label for="password">Password (at least 8 characters)</label>
                 <input type="password" name="password" placeholder="Password">
+
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="confirmPassword" placeholder="Confirm Password">
 
                 <label for="confirmPassword">Re-type password</label>
                 <input type="password" name="confirmPassword" placeholder="Confirm Password">
 
                 <label for="userTargetCalories">Please enter desired target calories. Note: recommended 1600-2400/day for women and 2200-3200/day for men.</label>
-                <input type="text" name="userTargetCalories" placeholder="Target Calories">
+                <input type="text" name="targetCalories" placeholder="Daily target calories.">
 
                 <label></label> <!-- temporary solution for proper submit button allignment-->
                 <input type="submit">
             </fieldset>
         </form>
     </section>
+
 </body>
 </html>
